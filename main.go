@@ -9,6 +9,8 @@ import (
 )
 
 func main() {
+	zerolog.SetGlobalLevel(zerolog.DebugLevel)
+
 	log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stderr})
 
 	syllo := syllogism.Syllogism{}

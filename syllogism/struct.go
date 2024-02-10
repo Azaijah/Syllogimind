@@ -29,6 +29,7 @@ type conclusion struct {
 	statement2    *relationship
 	statementType statementType
 	isInverted    bool
+	outcome       bool
 }
 
 type relationship struct {
