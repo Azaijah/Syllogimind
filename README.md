@@ -1,5 +1,7 @@
 # Syllogimind
 
+*NOTE: This project is early on in development and everything is subject to change
+
 Syllogimind is a application developed in Go, designed to engage users in enhancing their logical reasoning capabilities through the generation and solving of syllogisms. Grounded in Relational Frame Theory (RFT), a psychological theory of human language and cognition, Syllogimind offers a unique approach to developing cognitive skills. RFT posits that humans learn language and cognition through the relational linking of concepts, and Syllogimind leverages this theory to provide a powerful educational tool.
 
 ## Features
