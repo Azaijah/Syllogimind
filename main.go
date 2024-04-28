@@ -4,18 +4,24 @@ import (
 	"os"
 
 	"github.com/Azaijah/Syllogimind/syllogism"
+	"github.com/Azaijah/Syllogimind/syllogism/gtlt"
+
 	"github.com/rs/zerolog"
-	"github.com/rs/zerolog/log"
+	log "github.com/rs/zerolog/log"
 )
+
+// Define a struct that matches the TOML file structure
 
 func main() {
 	zerolog.SetGlobalLevel(zerolog.DebugLevel)
 
 	log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stderr})
 
-	syllo := syllogism.Syllogism{}
+	syllogism.Init()
 
-	syllo.Generate()
-	syllo.Show()
+	gtlt.GenerateGTLT()
+
+	//syllo.Generate()
+	//syllo.Show()
 
 }
